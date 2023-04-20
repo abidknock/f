@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        { "header": "Accept", "operation": "set", "value": "*/*" },
+        { "header": "Accept-Encoding", "operation": "set", "value": "identity;q=1, *;q=0" },
+        { "header": "Range", "operation": "set", "value": "bytes=0-" },
+        { "header": "Sec-Fetch-Dest", "operation": "set", "value": "video" },
+        { "header": "Sec-Fetch-Mode", "operation": "set", "value": "no-cors" },
+        { "header": "Sec-Fetch-Site", "operation": "set", "value": "same-site" },
+        { "header": "Referer", "operation": "set", "value": "https://www.tiktok.com/" }
+      ]
+    },
+    "condition": { 
+      "urlFilter": "*", 
+      "resourceTypes": ["main_frame"] 
+    }
+  }
+]
